@@ -25,7 +25,7 @@ void float_to_frac(double input, int top)
 	for (deno = 1; deno < top; deno++)
 	{
 		check = 0;
-		value = input * m;
+		value = input * deno;
 		for (nume = 0; nume < deno; nume++)
 		{
 			if (fabs(value - nume) < (1.0 / top))
