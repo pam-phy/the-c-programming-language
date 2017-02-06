@@ -18,7 +18,7 @@ int main(void)
 		test = input * m;
 		for (n = 1; n < m; n++)
 		{
-			if (fabs(test - n) < 0.000001)
+			if (fabs(test - n) < (1.0 / TOP))
 			{
 				check = 1;
 				nume = n;	// numerator
