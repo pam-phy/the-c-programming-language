@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#define TOP 100000
+#define TOP 10000000000
 
 int main(void)
 {
@@ -32,7 +32,7 @@ int main(void)
 		}
 	}
 
-	printf("%f = %d/%d\n", input, n, m);
+	printf("%.10f = %d/%d\n", input, n, m);
 
 	return 0;
 }
