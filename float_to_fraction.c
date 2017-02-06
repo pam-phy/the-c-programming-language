@@ -21,13 +21,13 @@ int main(void)
 			if (fabs(test - n) < 0.000001)
 			{
 				check = 1;
-				nume = n;
+				nume = n;	// numerator
 				break;
 			}
 		}
 		if (1 == check)
 		{
-			deno = m;
+			deno = m;		// denominator
 			break;
 		}
 	}
