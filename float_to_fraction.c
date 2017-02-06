@@ -18,29 +18,24 @@ int main(void)
 
 void float_to_frac(double input, int top)
 {
-	int m, n;
 	int nume, deno;
 	int value;
 	int check;
 
-	for (m = 1; m < top; m++)
+	for (deno = 1; deno < top; deno++)
 	{
 		check = 0;
 		value = input * m;
-		for (n = 0; n < m; n++)
+		for (nume = 0; nume < deno; nume++)
 		{
-			if (fabs(value - n) < (1.0 / top))
+			if (fabs(value - nume) < (1.0 / top))
 			{
 				check = 1;
-				nume = n;
 				break;
 			}
 		}
 		if (1 == check)
-		{
-			deno = m;
 			break;
-		}
 	}
 	printf("%.10f = %d/%d\n", input, nume, deno);
 }
